@@ -20,28 +20,40 @@
 ![image info](planv3.png)
 
 
+
+Testing code to use: 
+<code><pre>
+def test_name_describing_test(self):
+&ensp;&ensp;&ensp;&ensp;expected =
+&ensp;&ensp;&ensp;&ensp;actual =
+&ensp;&ensp;&ensp;&ensp;self.assertEqual(expected,actual)
+</pre>
+</code>
+
+
+
 # **TO DO:** 
 1. 
-- [] create a new branch to work on the testing <span style="color:red">**Guest**</span>
-- [] upload to github
-- [] test what guest needs to do and iterate over the plan image, adding any aditional features etc
-- [] final upload of branch, merge and branch removal
+- [X] &ensp;&ensp;Create a new branch to work on the testing <span style="color:red">**Guest**</span>
+- [X] &ensp;&ensp;Upload to github
+- [current] &ensp;&ensp;Test what guest needs to do and iterate over the plan image, adding any aditional features etc
+- [] &ensp;&ensp;Final upload of branch, merge and branch removal
 
 2. 
-- [] create a new branch to work on the testing <span style="color:red">**Room**</span>
-- [] upload to github
-- [] test what guest needs to do and iterate over the plan image, adding any aditional features etc
-- [] final upload of branch, merge and branch removal
+- [] &ensp;&ensp;Create a new branch to work on the testing <span style="color:red">**Room**</span>
+- [] &ensp;&ensp;Upload to github
+- [] &ensp;&ensp;Test what guest needs to do and iterate over the plan image, adding any aditional features etc
+- [] &ensp;&ensp;Final upload of branch, merge and branch removal
 
 3. 
-- [] create a new branch to work on the testing <span style="color:red">**Song**</span>
-- [] upload to github
-- [] test what guest needs to do and iterate over the plan image, adding any aditional features etc
-- [] final upload of branch, merge and branch removal
+- [] &ensp;&ensp;Create a new branch to work on the testing <span style="color:red">**Song**</span>
+- [] &ensp;&ensp;Upload to github
+- [] &ensp;&ensp;Test what guest needs to do and iterate over the plan image, adding any aditional features etc
+- [] &ensp;&ensp;Final upload of branch, merge and branch removal
 
 4. 
 
-- [] create a new branch to work on the testing <span style="color:red">**KaraokeBar**</span>
-- [] upload to github
-- [] test what guest needs to do and iterate over the plan image, adding any aditional features etc
-- [] final upload of branch, merge and branch removal
+- [] &ensp;&ensp;Create a new branch to work on the testing <span style="color:red">**KaraokeBar**</span>
+- [] &ensp;&ensp;Upload to github
+- [] &ensp;&ensp;Test what guest needs to do and iterate over the plan image, adding any aditional features etc
+- [] &ensp;&ensp;Final upload of branch, merge and branch removal
