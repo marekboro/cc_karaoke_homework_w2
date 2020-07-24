@@ -25,6 +25,13 @@ class TestGuest(unittest.TestCase):
         actual = self.guest.fav_song
         self.assertEqual(expected,actual)
 
+    def test_wallet_size(self):
+        expected = 240.2
+        actual = self.guest.wallet
+        self.assertEqual(expected,actual)
+    
+
+
     
 
     
