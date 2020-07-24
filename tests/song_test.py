@@ -8,6 +8,8 @@ class TestSong(unittest.TestCase):
         genre = "rock"
         self.song = Song(name,genre)
 
-    def test_song_has_name(self):
-        pass
+    def test_name_of_song(self):
+        expected = "Under Pressure"
+        actual = self.song.name
+        self.assertEqual(expected,actual)
 
