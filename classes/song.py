@@ -1,2 +1,4 @@
 class Song:
-    pass
+    def __init__(self,name, genre):
+        self.name = name
+        self.type = genre
