@@ -15,14 +15,14 @@ class TestGuest(unittest.TestCase):
         actual = self.guest.name
         self.assertEqual(expected,actual)
 
-    # def test_guest2_has_name_fail(self):
-    #     expected = "Homer Simpson"
-    #     actual = self.guest2.name
-    #     self.assertEqual(expected,actual)
-    
-    def test_guest2_has_name_None(self):
+    def test_guest2_has_no_name(self):
         expected = None
         actual = self.guest2.name
+        self.assertEqual(expected,actual)
+    
+    def test_fav_song_guest1(self):
+        expected = "Radio GaGa"
+        actual = self.guest.fav_song
         self.assertEqual(expected,actual)
 
     
