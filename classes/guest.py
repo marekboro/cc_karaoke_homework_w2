@@ -3,4 +3,9 @@ class Guest:
         self.name = name
         self.wallet = wallet
         self.fav_song = fav_song
+    
+    def modify_wallet(self,ammount):
+        self.wallet +=ammount
+    
+
         
