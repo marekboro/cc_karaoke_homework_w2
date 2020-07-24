@@ -36,17 +36,17 @@ def test_name_describing_test(self):
 1. 
 - [X] &ensp;&ensp;Create a new branch to work on the testing <span style="color:red">**Guest**</span>
 - [X] &ensp;&ensp;Upload to github
-- [current] &ensp;&ensp;Test what guest needs to do and iterate over the plan image, adding any aditional features etc
-- [] &ensp;&ensp;Final upload of branch, merge and branch removal
+- [X] &ensp;&ensp;Test what guest needs to do and iterate over the plan image, adding any aditional features etc
+- [X] &ensp;&ensp;Final upload of branch, merge and branch removal
 
 2. 
-- [] &ensp;&ensp;Create a new branch to work on the testing <span style="color:red">**Room**</span>
-- [] &ensp;&ensp;Upload to github
-- [] &ensp;&ensp;Test what guest needs to do and iterate over the plan image, adding any aditional features etc
-- [] &ensp;&ensp;Final upload of branch, merge and branch removal
+- [X] &ensp;&ensp;Create a new branch to work on the testing <span style="color:red">**Song**</span>
+- [X] &ensp;&ensp;Upload to github
+- [X] &ensp;&ensp;Test what guest needs to do and iterate over the plan image, adding any aditional features etc
+- [X] &ensp;&ensp;Final upload of branch, merge and branch removal
 
 3. 
-- [] &ensp;&ensp;Create a new branch to work on the testing <span style="color:red">**Song**</span>
+- [X] &ensp;&ensp;Create a new branch to work on the testing <span style="color:red">**Room**</span>
 - [] &ensp;&ensp;Upload to github
 - [] &ensp;&ensp;Test what guest needs to do and iterate over the plan image, adding any aditional features etc
 - [] &ensp;&ensp;Final upload of branch, merge and branch removal
