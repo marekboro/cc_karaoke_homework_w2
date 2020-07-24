@@ -1,12 +1,20 @@
-1. git init
-2. git add README.md
-3. git commit -m "first commit"
-4. git remote add origin https://github.com/marekboro/cc_karaoke_homework_w2.git
-5. git push -u origin master
+# Starting homework: 
+- [X] Setup files structures and __init__ files 
+- [X] Create reposiroty on github and get link for this
+- [X] git init, commit and add to github: 
+<pre>              
+                git init
+                git commit -m "first commit"
+                git remote add origin https://github.com/marekboro/cc_karaoke_homework_w2.git
+                git push -u origin master </pre>
 
-6. git checkout -b BRANCHNAME - creates a branch of the
-7. git add . from within the branch
-8. git push origin BRANCHNAME 
+## Creating and adding to a branch:  
+<pre>
+                git checkout -b BRANCHNAME
+                git add . from within the branch
+                git push origin BRANCHNAME
+</pre>
 
+## Rouch Sketch of the plan:?  
 
-9. ![image info](./plan_no_arrows.png)
+![image info](planv2.png)
