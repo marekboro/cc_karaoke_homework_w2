@@ -1,6 +1,7 @@
 import unittest
 from classes.room import Room
 from classes.song import Song
+from classes.guest import Guest
 
 class TestRoom(unittest.TestCase):
     def setUp(self):
@@ -9,11 +10,14 @@ class TestRoom(unittest.TestCase):
         song2 = Song("We are the champions","rock")
         songs_list = [song1,song2]
         is_occupied = False
-        occupant = None
+        guest1 = None
+        guest2 = Guest("Bert Sampson",9001, song2)
+        #occupant = guest2
         price = 200.50
-        self.room = Room(aroom_number,songs_list,is_occupied,occupant,price)
-
-        self.room2 = Room(2,self.room.song_list,True,"Bert Sampson",130)
+        self.room = Room(aroom_number,songs_list,is_occupied,guest1,price)
+        
+        
+        self.room2 = Room(2,self.room.song_list,True, guest2,730)
 
     
     def test_room_number(self):
@@ -41,4 +45,10 @@ class TestRoom(unittest.TestCase):
         expected = True
         actual = self.room2.is_occupied
         self.assertEqual(expected,actual)
+    
+    def test_room2_guest_name(self):
+        expected = "Bert Sampson"
+        actual = self.room2.occupant.name
+        self.assertEqual(expected,actual)
+
 
