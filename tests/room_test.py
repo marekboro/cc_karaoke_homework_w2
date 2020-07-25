@@ -8,10 +8,11 @@ class TestRoom(unittest.TestCase):
         aroom_number = 1
         song1 = Song("Radio GaGa","rock")
         song2 = Song("We are the champions","rock")
+        song3 = Song("Breed","grunge")
         songs_list = [song1,song2]
         is_occupied = False
         guest1 = None
-        guest2 = Guest("Bert Sampson",9001, song2)
+        guest2 = Guest("Bert Sampson",9001, song3)
         #occupant = guest2
         price = 200.50
         self.room = Room(aroom_number,songs_list,is_occupied,guest1,price)
@@ -49,6 +50,11 @@ class TestRoom(unittest.TestCase):
     def test_room2_guest_name(self):
         expected = "Bert Sampson"
         actual = self.room2.occupant.name
+        self.assertEqual(expected,actual)
+
+    def test_room2_geuest_fav_song(self):
+        expected = "Breed"
+        actual = self.room2.occupant.fav_song.name
         self.assertEqual(expected,actual)
 
 
