@@ -18,10 +18,13 @@ class TestRoom(unittest.TestCase):
         actual = self.room.aroom_number
         self.assertEqual(expected,actual)
 
-    def test_song_list_entry_at_index_0(self):
-        expected = "We are the champions"
-        actual = self.room.song_list[1].name
+    def test_song_list_name_entry_at_index_0(self):
+        expected = "Radio GaGa"
+        actual = self.room.song_list[0].name
         self.assertEqual(expected,actual)
         
-        
+    def test_song_list_genre_entry_at_index_1(self):
+        expected = "rock"
+        actual = self.room.song_list[1].genre
+        self.assertEqual(expected,actual)
 
