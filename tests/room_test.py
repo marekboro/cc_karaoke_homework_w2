@@ -12,6 +12,9 @@ class TestRoom(unittest.TestCase):
         occupant = None
         price = 200.50
         self.room = Room(aroom_number,songs_list,is_occupied,occupant,price)
+
+        self.room2 = Room(2,self.room.song_list,True,"Bert Sampson",130)
+
     
     def test_room_number(self):
         expected = 1
@@ -31,4 +34,11 @@ class TestRoom(unittest.TestCase):
     def test_room_is_occupied_false(self):
         expected = False
         actual = self.room.is_occupied
+        actual = self.room.is_occupied
         self.assertEqual(expected,actual)
+
+    def test_room2_is_occupied_true(self):
+        expected = True
+        actual = self.room2.is_occupied
+        self.assertEqual(expected,actual)
+
