@@ -28,3 +28,7 @@ class TestRoom(unittest.TestCase):
         actual = self.room.song_list[1].genre
         self.assertEqual(expected,actual)
 
+    def test_room_is_occupied_false(self):
+        expected = False
+        actual = self.room.is_occupied
+        self.assertEqual(expected,actual)
