@@ -17,6 +17,11 @@ class TestRoom(unittest.TestCase):
         expected = 1
         actual = self.room.aroom_number
         self.assertEqual(expected,actual)
-        #pass
+
+    def test_song_list_entry_at_index_0(self):
+        expected = "We are the champions"
+        actual = self.room.song_list[1].name
+        self.assertEqual(expected,actual)
+        
         
 
