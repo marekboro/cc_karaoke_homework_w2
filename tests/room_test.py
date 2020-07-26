@@ -19,12 +19,12 @@ class TestRoom(unittest.TestCase):
         
         self.room = Room(aroom_number,songs_list,is_occupied,guest1,price)
         #current_song = self.room.random_song_play()
-        
+    
         self.room2 = Room(2,self.room.song_list,True, guest2,730)
 
-        self.randsongplay2 = Room.rand_2(self)
-        self.randsongplay3 = Room.rand_3(self,songs_list)
-        self.rand_song = Room.play_random_song(self,songs_list)
+# - EXTENSION:
+#        self.rand_song = Room.play_random_song(self,songs_list)
+# - /EXTENSION
 
     def test_room_number(self):
         expected = 1
@@ -62,21 +62,26 @@ class TestRoom(unittest.TestCase):
         actual = self.room2.occupant.fav_song.name
         self.assertEqual(expected,actual)
         
-    # def test_play_random_song_from_list(self):
-    #     expected = "La La La Bamba"
+    def test_check_in_to_occupied_room(self):
+        expected = "Room is not empty"
+        f_song = Song("Willow Theme","instrumental")
+        guest_to_checkin = Guest("Mad Martigan",500,f_song)
 
-    #     actual = self.randsongplay3
-       
+        actual = self.room2.check_in_to_room(guest_to_checkin,self.room2.aroom_number)
+        self.assertEqual(expected,actual)
+ 
+    # - E X T E N S I O N - to work need to uncomment Extension in room.py and in setUp within room_test.py - - - - 
+    
+    # def test_play_song_at_random_name(self): # this one works but as it is a random test it will faill pass at random
+    #     expected = "Radio GaGa"
+    #     song_name = self.rand_song.name
+    #     actual = song_name
+    #     self.assertEqual(expected,actual)
+    
+    # def test_play_song_at_random(self): # this one works but as it is a random test it will faill pass at random
+    #     expected = self.room.song_list[0]
+    #     song = self.rand_song
+    #     actual = song
     #     self.assertEqual(expected,actual)
 
-    def test_play_song_at_random_name(self): # this one works but as it is a random test it will faill pass at random
-        expected = "Radio GaGa"
-        song_name = self.rand_song.name
-        actual = song_name
-        self.assertEqual(expected,actual)
-    
-    def test_play_song_at_random(self): # this one works but as it is a random test it will faill pass at random
-        expected = self.room.song_list[0]
-        song = self.rand_song
-        actual = song
-        self.assertEqual(expected,actual)
+    # - / E X T E N S I O N - - -

@@ -11,27 +11,18 @@ class Room:
         self.occupant = occupant
         #occupant    # aka guest
     
-    def random_song_play(self,song_list):
-        print("wollooloo ")
-        return f"La la la {random.choice(self.song_list).name}"
-        #return "oh my gosh"
+# - EXTENSION
 
-    def rand_1(self):
-        return f"La la la {random.choice(self.song_list).name}"
-       # print("hi")
+    # def play_random_song(self,song_list):
+    #     random_song= random.choice(song_list)
+    #     return random_song
 
-    def rand_2(self):           # this 
-        return "rand2"          # and this seems to work
-
-    def rand_3(self,song_list):
-        random_name = random.choice(song_list).name
-        return f" rand3 name: {random_name}"
-
-    def song_name(self,song):
-        return song.name
-
-    def play_random_song(self,song_list):
-        random_song= random.choice(song_list)
-        return random_song
-        
+# - /EXTENSION
+    
+    def check_in_to_room(self,Guest, aroom_number):
+        if self.is_occupied:
+            return "Room is not empty"
+        else:
+            pass
+              
 
