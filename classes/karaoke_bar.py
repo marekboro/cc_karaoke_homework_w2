@@ -1,3 +1,4 @@
+import random
 class KaraokeBar:
     def __init__(self,rooms,till,songsDB):
         self.name = "Singoholics Annonymous"
@@ -13,5 +14,9 @@ class KaraokeBar:
     def check_in(self,room_number, customer):
         self.rooms[room_number].check_in_to_room(customer,room_number)
 
-    #def count_available_rooms()
+    def add_songs_to_room_list(self, room_number):
+        self.rooms[room_number].song_list.extend(self.songsDB)
+
+    #def play_songs(self,room_number):
+    #    self.rooms[room_number]
 
