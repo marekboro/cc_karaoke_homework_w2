@@ -9,5 +9,17 @@ class Guest:
         
     def get_fav_song(self):
         return self.fav_song
+    def check_playlist(self, songlist):
+        if songlist.count(self.fav_song) >= 1:
+            return "Woohoo!"
+        else:
+            return "oh no"
+
+
+    # def check_playlist(self, songlist):
+    #     for self.fav_song in songlist:
+    #         return "Woohoo!"
+    #     else:
+    #         return "oh no"
 
         

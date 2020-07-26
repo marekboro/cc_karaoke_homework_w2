@@ -18,8 +18,9 @@ class TestKaraokeBar(unittest.TestCase):
         song_8 = Song("Song 8","pop")
         song_9 = Song("Song 9","funk")
         song_10 = Song("Song 10","funk")
+        song_11 = Song("missing","test")
         
-        self.customer_1 = Guest("Mr Curst Omar1",600, song_8)
+        self.customer_1 = Guest("Mr Curst Omar1",600, song_11)
         self.customer_2 = Guest("Mr Curst Omar2",400, song_1)
         self.customer_3 = Guest("Mr Curst Omar3",500, song_2)
         self.customer_4 = Guest("Mr Curst Omar4",290, song_3)
@@ -81,3 +82,12 @@ class TestKaraokeBar(unittest.TestCase):
         actual = self.the_bar.till
         self.assertEqual(expected,actual)
 
+    def test_is_fav_song_in_playlist(self):
+        expected = "oh no"
+        the_customer = self.customer_1
+        self.the_bar.check_in(0,the_customer)
+        self.the_bar.add_songs_to_room_list(0)
+        actual = self.customer_1.check_playlist(self.the_bar.rooms[0].song_list)
+        self.assertEqual(expected,actual)
+
+        
