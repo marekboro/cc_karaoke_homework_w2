@@ -91,6 +91,12 @@ class TestRoom(unittest.TestCase):
         actual = self.room.occupant.fav_song
         self.assertEqual(expected, actual)
 
+    def test_full_room_has_no_occupant_after_checkout(self):
+        self.room2.check_out()
+        expected = False
+        
+        actual = self.room2.is_occupied
+        self.assertEqual(expected,actual)
 
 
 

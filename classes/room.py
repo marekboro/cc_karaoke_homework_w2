@@ -28,4 +28,9 @@ class Room:
                 Guest.modify_wallet(-self.price)
                 #kareokebar.modify_till(self.price) # to update kareoke bar cash
                 return f"Welcome to room {aroom_number}"
+    
+    def check_out(self):
+        self.occupant = None
+        self.is_occupied = False
+
 
