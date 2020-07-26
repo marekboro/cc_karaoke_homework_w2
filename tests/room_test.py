@@ -44,7 +44,6 @@ class TestRoom(unittest.TestCase):
     def test_room_is_occupied_false(self):
         expected = False
         actual = self.room.is_occupied
-        actual = self.room.is_occupied
         self.assertEqual(expected,actual)
 
     def test_room2_is_occupied_true(self):
@@ -70,6 +69,19 @@ class TestRoom(unittest.TestCase):
         actual = self.room2.check_in_to_room(guest_to_checkin,self.room2.aroom_number)
         self.assertEqual(expected,actual)
  
+    def test_checking_to_empty_room(self):
+        expected = "Welcome to room 1"
+        f_song = Song("Willow Theme","instrumental")
+        guest_to_checkin = Guest("Mad Martigan",500,f_song)
+
+        actual = self.room.check_in_to_room(guest_to_checkin,self.room.aroom_number)
+
+        self.assertEqual(expected,actual)
+
+
+
+
+
     # - E X T E N S I O N - to work need to uncomment Extension in room.py and in setUp within room_test.py - - - - 
     
     # def test_play_song_at_random_name(self): # this one works but as it is a random test it will faill pass at random

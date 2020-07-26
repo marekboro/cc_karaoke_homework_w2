@@ -22,7 +22,10 @@ class Room:
     def check_in_to_room(self,Guest, aroom_number):
         if self.is_occupied:
             return "Room is not empty"
-        else:
-            pass
-              
+        elif not self.is_occupied:
+                self.occupant = Guest
+                self.is_occupied = True
+                Guest.modify_wallet(-self.price)
+                #kareokebar.modify_till(self.price) # to update kareoke bar cash
+                return f"Welcome to room {aroom_number}"
 
