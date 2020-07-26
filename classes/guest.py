@@ -7,5 +7,7 @@ class Guest:
     def modify_wallet(self,ammount):
         self.wallet = round(self.wallet + ammount,2) # without rounding up, subtraction in floats is a dangerous game. 
         
+    def get_fav_song(self):
+        return self.fav_song
 
         
