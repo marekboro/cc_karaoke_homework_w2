@@ -26,6 +26,3 @@ class KaraokeBar:
 
    
 
-    #def play_songs(self,room_number):
-    #    self.rooms[room_number]
-

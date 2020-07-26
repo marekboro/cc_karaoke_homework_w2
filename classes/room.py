@@ -14,9 +14,9 @@ class Room:
     
 # - EXTENSION
 
-    # def play_random_song(self,song_list):
-    #     random_song= random.choice(song_list)
-    #     return random_song
+    def play_random_song(self,song_list):
+        random_song= random.choice(song_list)
+        return random_song
 
 # - /EXTENSION
     
