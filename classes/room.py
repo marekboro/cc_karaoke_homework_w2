@@ -1,5 +1,6 @@
 from classes.guest import Guest
 from classes.song import Song
+#from classes.karaoke_bar import KaraokeBar
 import random
 
 class Room:
@@ -26,6 +27,7 @@ class Room:
                 self.occupant = Guest
                 self.is_occupied = True
                 Guest.modify_wallet(-self.price)
+                #KaraokeBar.modify_till(self.price)
                 #kareokebar.modify_till(self.price) # to update kareoke bar cash
                 return f"Welcome to room {aroom_number}"
     

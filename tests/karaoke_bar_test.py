@@ -68,8 +68,16 @@ class TestKaraokeBar(unittest.TestCase):
         self.assertEqual(expected,actual)
     
     def test_checkin_to_full_room_name_of_cust(self):
-        expected = "Mr Curst Omar1"
+        expected = "Mr Curst Omar6"
         the_customer = self.customer_1
         self.the_bar.check_in(2,the_customer)
         actual = self.the_bar.rooms[2].occupant.name
         self.assertEqual(expected,actual)
+
+    def test_till_rose_upon_checkin(self):
+        expected = 500.00
+        the_customer = self.customer_1
+        self.the_bar.check_in(0,the_customer)
+        actual = self.the_bar.till
+        self.assertEqual(expected,actual)
+
