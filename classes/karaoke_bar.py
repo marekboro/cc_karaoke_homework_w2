@@ -12,7 +12,10 @@ class KaraokeBar:
         return bar_name
 
     def check_in(self,room_number, customer):
-        self.rooms[room_number].check_in_to_room(customer,room_number)
+        try:
+            self.rooms[room_number].check_in_to_room(customer,room_number)
+        except:
+            return self.rooms[room_number].check_in_to_room(customer,room_number)
 
     def add_songs_to_room_list(self, room_number):
         self.rooms[room_number].song_list.extend(self.songsDB)
